@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Continental Suite Salmiya - Luxury Long-Stay Suites</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#D4AF37",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#1A1A1A",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .suite-card .details, .suite-card .view-details {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .suite-card:hover .details {
+            opacity: 0;
+        }
+        .suite-card:hover .view-details {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 bg-background-dark/80 px-4 sm:px-10 md:px-20 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<a href="index.html">
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Continental Suite Salmiya</h2>
+</a>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Suites</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="suites_and_apartments_overview.html">Amenities</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="amenities_and_services.html">Long-Stay Offers</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="location.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-yellow-300 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<div class="relative">
+<div class="flex min-h-[60vh] md:min-h-[50vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center text-center p-4" data-alt="Luxurious and modern living room of a hotel suite with floor-to-ceiling windows overlooking a city at dusk" style='background-image: linear-gradient(rgba(26, 26, 26, 0.6) 0%, rgba(26, 26, 26, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqdUEK0orNQXVVk4lEld9Rs99RIDBJZV6FD98xcT0cAikH1S3dlVhDSZCI7p6uZWJ-YQs706ljWYxfZSg2pn_ZfcFuYUMbQMaGyeQTNhREZkPb9IolVPWnCol7A4TRKSe1kMPIIBetxEvMCNzKwBICn4sqf_OzH1mjtI67ru566UYhHDeBIJWBhz1hp2lUhaCfbos3ZVhUnsToh_rnnsOmkxK3gIsgICb5V2ddEaczfiQ2b1oAC2dADpUxDRTkWCFJ7KPBCMkLSCqH");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl">Experience Unrivaled Long-Stay Luxury</h1>
+<h2 class="text-slate-200 text-sm font-normal leading-normal md:text-base max-w-2xl mx-auto">Your exclusive home away from home in the heart of Salmiya. Discover the perfect suite for your lifestyle.</h2>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="px-4 sm:px-10 md:px-20 py-10 lg:py-16 max-w-7xl mx-auto">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] text-center">A Suite for Every Lifestyle</h2>
+</div>
+<!-- ImageGrid -->
+<div class="px-4 sm:px-10 md:px-20 pb-10 lg:pb-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Suite Card 1 -->
+<div class="group suite-card flex flex-col gap-4 bg-[#2C2C2C]/30 rounded-lg overflow-hidden border border-white/10 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Spacious one-bedroom executive suite with a modern desk and city view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7AC2mJ0raI6vHLP6I6BriXnzsL2jSK4V203G2cSXBXjPHai8LrCvtfZhmQsSIiXw4vt3OrFm2d9hojLjnBJDp5IGEx_JLo407iC_LAiDJuOkTrf8Qv20AAOuP0TaFCSCvLK2Wm8HkQxkr51NeubQseKTeRGCliUJ-9uMwR1UTn7awl0inb9fenXu7KslSab2JFxnK6vGfRiJSNzzxlMpiLE-yjRG1yvpo3ETmJ2cneJA6ckIdWAz2qhQPURq-ooLXgcSjWFnSpHGT");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<div class="relative">
+<div class="details opacity-100">
+<p class="text-white text-lg font-bold leading-normal">One-Bedroom Executive Suite</p>
+<p class="text-slate-300 text-sm font-normal leading-normal">Spacious living for the modern professional.</p>
+</div>
+<div class="absolute inset-0 view-details opacity-0 flex items-center justify-center">
+<a class="text-primary font-bold text-center" href="#">View Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 pt-0 flex items-center gap-4 text-slate-400">
+<span class="material-symbols-outlined text-xl" title="WiFi">wifi</span>
+<span class="material-symbols-outlined text-xl" title="Kitchenette">kitchen</span>
+<span class="material-symbols-outlined text-xl" title="City View">location_city</span>
+</div>
+</div>
+<!-- Suite Card 2 -->
+<div class="group suite-card flex flex-col gap-4 bg-[#2C2C2C]/30 rounded-lg overflow-hidden border border-white/10 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Bright two-bedroom family suite with a cozy living area" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6JlwiGJovrgLM_fTV0w5colfCPqbhVGwjGCzAKwGAdiub6WYrfnC0Bhu0h7oaPB7abnGNw5uVHHp96ba2MeRSqslePh9SN5ZdYD4CcMuZX7108PB13NQIYBhA81foBkw2wWdOP5a0ET8KImWaYfP0twhV_T1sWZiUS3xd8Hpqh7m-aEsDziZuQSBZ_9xX9AIIdMX7ja0p7863lJpGvn3w-0xPr8Yq1ny9KTRleKEqgPODPXToKTOdEzJipzNFVUrrzqAzEP-vdccC");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<div class="relative">
+<div class="details opacity-100">
+<p class="text-white text-lg font-bold leading-normal">Two-Bedroom Family Suite</p>
+<p class="text-slate-300 text-sm font-normal leading-normal">Perfect comfort for family relocations.</p>
+</div>
+<div class="absolute inset-0 view-details opacity-0 flex items-center justify-center">
+<a class="text-primary font-bold text-center" href="#">View Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 pt-0 flex items-center gap-4 text-slate-400">
+<span class="material-symbols-outlined text-xl" title="WiFi">wifi</span>
+<span class="material-symbols-outlined text-xl" title="Kitchenette">kitchen</span>
+<span class="material-symbols-outlined text-xl" title="Sea View">water</span>
+</div>
+</div>
+<!-- Suite Card 3 -->
+<div class="group suite-card flex flex-col gap-4 bg-[#2C2C2C]/30 rounded-lg overflow-hidden border border-white/10 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant and compact deluxe studio with a queen bed" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7xZajdouPPbG-Z8wwHrFrqiWpgG3rP16wzNaHJL_T3X4C-msSOBU2AKAE-70BosLrJBcfhArUKQZRG6EuPXyFvoliW0Y-6MjVQm_EoCDp-cChTG6p2NJru203HsNTsuBGIHL1ugdIMkT40JR5ykZeXuY3jEzQPQxXzmRe6N3FmgsvDoxu_OgGqj95GAqRCjoUHQd5d-05lvcWVybQqRa-53qFFdORmEHFtgY4E7ou8w-taqiYVbYFuMS_RgRGd6OqG1BqENi9Jiv8");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<div class="relative">
+<div class="details opacity-100">
+<p class="text-white text-lg font-bold leading-normal">Deluxe Studio</p>
+<p class="text-slate-300 text-sm font-normal leading-normal">Elegantly designed for solo travelers.</p>
+</div>
+<div class="absolute inset-0 view-details opacity-0 flex items-center justify-center">
+<a class="text-primary font-bold text-center" href="#">View Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 pt-0 flex items-center gap-4 text-slate-400">
+<span class="material-symbols-outlined text-xl" title="WiFi">wifi</span>
+<span class="material-symbols-outlined text-xl" title="Kitchenette">kitchen</span>
+<span class="material-symbols-outlined text-xl" title="Air Conditioning">ac_unit</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-black/50 border-t border-white/10 mt-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-10 md:px-20 py-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<h3 class="text-white text-lg font-bold mb-4">Continental Suite Salmiya</h3>
+<p class="text-slate-400 text-sm">Providing unparalleled long-stay luxury and comfort for international families, expats, and corporate executives in the heart of Salmiya.</p>
+</div>
+<div>
+<h3 class="text-white text-lg font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-slate-400 hover:text-primary text-sm transition-colors" href="index.html">Home</a></li>
+<li><a class="text-slate-400 hover:text-primary text-sm transition-colors" href="suites_and_apartments_overview.html">Suites</a></li>
+<li><a class="text-slate-400 hover:text-primary text-sm transition-colors" href="amenities_and_services.html">Amenities</a></li>
+<li><a class="text-slate-400 hover:text-primary text-sm transition-colors" href="location.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white text-lg font-bold mb-4">Contact Us</h3>
+<p class="text-slate-400 text-sm">Amr Ibn Al-A'as St, Salmiya, Kuwait</p>
+<p class="text-slate-400 text-sm">info@continentalsuite.com</p>
+<p class="text-slate-400 text-sm">+965 1234 5678</p>
+</div>
+</div>
+<div class="mt-8 border-t border-white/10 pt-6 text-center text-slate-500 text-sm">
+<p>© 2023 Continental Suite Salmiya. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
